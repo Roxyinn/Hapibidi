@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background: #45a049;
+  display: grid;
+  place-items: center;
+  height: auto;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #fff; /* Improved text contrast */
+}
+
+.card {
+  background: #fdfdfd;
+  border-radius: 4px;
+  height: auto; /* Mengatur tinggi menjadi otomatis agar sesuai dengan konten */
+  width: 80vw;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+}
+
+img.birthday {
+  max-height: 60vh;
+  border-radius: 4px;
+}
+
+.text {
+  padding: 1em;
+  color: #333; /* Adjusted text color */
+}
+
+.muted {
+  opacity: 0.8;
+}
+
+.space {
+  height: 100px;
+}
+
+button {
+  background-color: #4CAF50; /* Warna latar belakang tombol */
+  border: none;
+  color: white; /* Warna teks */
+  padding: 15px 32px; /* Padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px; /* Sudut tombol */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efek transisi hover */
+}
+
+button:hover {
+  background-color: #2e719e; /* Warna latar belakang saat dihover */
+}
+
+button:focus {
+  outline: none; /* Hilangkan garis fokus */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body.play-music {
+  animation: fadeIn 2s ease-in-out; /* Adjust the animation duration and timing function as needed */
+}
